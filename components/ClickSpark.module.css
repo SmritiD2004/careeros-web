@@ -1,0 +1,15 @@
+.clickSparkWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clickSparkCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}

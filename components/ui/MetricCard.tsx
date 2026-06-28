@@ -17,7 +17,7 @@ export function MetricCard({
   return (
     <div
       className={cn(
-        "rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/3 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]",
+        "rounded-3xl border border-white/10 bg-linear-to-br from-slate-950/90 via-slate-900/80 to-slate-950/70 p-5 shadow-[0_24px_80px_rgba(15,23,42,0.35)] transition-transform duration-300 ease-out hover:-translate-y-1 hover:border-white/20",
         className
       )}
     >

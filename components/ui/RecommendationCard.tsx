@@ -10,7 +10,7 @@ export function RecommendationCard({
   meta: string;
 }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/4 p-5 transition hover:bg-white/6">
+    <div className="rounded-3xl border border-white/10 bg-linear-to-br from-slate-950/90 via-slate-900/80 to-slate-950/70 p-5 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-medium text-white">{title}</p>

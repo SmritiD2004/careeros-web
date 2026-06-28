@@ -30,7 +30,7 @@ export default function Page() {
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-3xl border border-white/10 bg-white/4 p-6">
             <div className="flex flex-col gap-6 md:flex-row md:items-center">
-              <div className="size-32 rounded-[2rem] border border-white/10 bg-gradient-to-br from-amber-400 via-orange-500 to-zinc-900 p-1">
+              <div className="size-32 rounded-[2rem] border border-white/10 bg-linear-to-br from-amber-400 via-orange-500 to-zinc-900 p-1">
                 <div className="grid size-full place-items-center rounded-[1.75rem] bg-zinc-950 text-3xl font-bold text-white">
                   SK
                 </div>

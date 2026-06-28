@@ -29,7 +29,7 @@ export default function Page() {
           <MetricCard title="Avg solve time" value="18m" delta="-3m vs last month" />
         </div>
         <div className="mt-6 grid gap-6 xl:grid-cols-[1.3fr_0.9fr]">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+          <div className="rounded-3xl border border-white/10 bg-white/4 p-6">
             <SectionHeader title="Topic coverage" description="Coverage across your most important prep areas." />
             <div className="space-y-4">
               {topics.map(([label, value]) => (
@@ -39,13 +39,13 @@ export default function Page() {
                     <span className="text-white">{value as number}%</span>
                   </div>
                   <div className="h-3 rounded-full bg-white/5">
-                    <div className="h-full rounded-full bg-gradient-to-r from-amber-400 to-orange-500" style={{ width: `${value}%` }} />
+                    <div className="h-full rounded-full bg-linear-to-r from-amber-400 to-orange-500" style={{ width: `${value}%` }} />
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+          <div className="rounded-3xl border border-white/10 bg-white/4 p-6">
             <SectionHeader title="Recent solves" description="High-signal practice history." />
             <div className="grid gap-3">
               <ActivityItem title="Maximum Subarray with prefix optimization" meta="LeetCode · 16 min · Medium" tone="success" />

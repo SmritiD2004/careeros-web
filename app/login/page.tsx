@@ -12,7 +12,7 @@ export default function Page() {
     <div className="relative min-h-screen overflow-hidden bg-[#160806] text-white antialiased">
       {/* Background Gradients & Soft Tech Mesh */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(69,29,8,0.4),transparent_50%),radial-gradient(circle_at_bottom_left,rgba(232,163,125,0.06),transparent_40%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:40px_40px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-size-[40px_40px]" />
 
       <main className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-12 lg:grid-cols-2 lg:px-8">
         
@@ -26,7 +26,7 @@ export default function Page() {
 
             <h1 className="mt-6 max-w-xl text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl leading-[1.1]">
               Simplify placement workflows.{" "}
-              <span className="bg-gradient-to-r from-white via-[#E8A37D] to-[#FE7B34] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-white via-[#E8A37D] to-[#FE7B34] bg-clip-text text-transparent">
                 Boost readiness.
               </span>
             </h1>
@@ -36,7 +36,7 @@ export default function Page() {
           </div>
 
           {/* Interactive Workspace Area Inspired by the Uploaded Reference Minimalist Art */}
-          <div className="relative hidden md:flex items-center justify-center w-full max-w-xl h-80 rounded-[2.5rem] bg-gradient-to-br from-[#451D08]/20 via-[#451D08]/5 to-transparent border border-white/5 p-8 overflow-hidden">
+              <div className="relative hidden md:flex items-center justify-center w-full max-w-xl h-80 rounded-[2.5rem] bg-linear-to-br from-[#451D08]/20 via-[#451D08]/5 to-transparent border border-white/5 p-8 overflow-hidden">
             
             {/* Dynamic floating metric card */}
             <div className="absolute left-8 top-12 bg-[#160806]/90 border border-white/10 p-4 rounded-2xl shadow-2xl backdrop-blur-md animate-pulse">
@@ -52,8 +52,8 @@ export default function Page() {
             </div>
 
             {/* Minimal Vector Character / Meditating Focus Frame Placeholder */}
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="relative size-32 rounded-full bg-gradient-to-tr from-[#A9420A]/30 to-[#FE7B34]/10 flex items-center justify-center border border-[#FE7B34]/20">
+              <div className="flex flex-col items-center text-center space-y-4">
+              <div className="relative size-32 rounded-full bg-linear-to-tr from-[#A9420A]/30 to-[#FE7B34]/10 flex items-center justify-center border border-[#FE7B34]/20">
                 <div className="size-24 rounded-full bg-[#160806] border border-white/10 flex items-center justify-center">
                   <span className="text-3xl">🎯</span>
                 </div>
@@ -90,7 +90,7 @@ export default function Page() {
 
         {/* ================= RIGHT SIDE: LUXURY DARK-GLASS CARD WITH ROLE SELECTOR ================= */}
         <aside className="relative lg:justify-self-end w-full max-w-md">
-          <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-[#FE7B34]/10 to-transparent blur-3xl" />
+          <div className="absolute -inset-4 rounded-[2.5rem] bg-linear-to-br from-[#FE7B34]/10 to-transparent blur-3xl" />
           
           <div className="relative rounded-[2rem] border border-white/10 bg-[#160806]/80 p-8 shadow-[0_30px_100px_rgba(0,0,0,0.8)] backdrop-blur-xl">
             <div className="mb-6">
@@ -118,8 +118,8 @@ export default function Page() {
                       onClick={() => setRole(item.id)}
                       className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-lg text-[11px] font-medium transition-all duration-200 ${
                         isSelected
-                          ? "bg-gradient-to-b from-white/[0.08] to-white/[0.02] text-white shadow border border-white/10"
-                          : "text-zinc-500 hover:text-zinc-300 hover:bg-white/[0.02]"
+                            ? "bg-linear-to-b from-white/8 to-white/2 text-white shadow border border-white/10"
+                          : "text-zinc-500 hover:text-zinc-300 hover:bg-white/6"
                       }`}
                     >
                       <Icon className={`size-4 mb-1 transition-colors ${isSelected ? "text-[#FE7B34]" : ""}`} />
@@ -141,7 +141,7 @@ export default function Page() {
                     <Input
                       type="email"
                       placeholder="Enter your registered identifier"
-                      className="h-11 rounded-xl border-white/10 bg-white/[0.02] text-white placeholder:text-zinc-600 focus:border-[#FE7B34]/50 focus:ring-1 focus:ring-[#FE7B34]/50 pl-4"
+                      className="h-11 rounded-xl border-white/10 bg-white/2 text-white placeholder:text-zinc-600 focus:border-[#FE7B34]/50 focus:ring-1 focus:ring-[#FE7B34]/50 pl-4"
                     />
                   </div>
                 </label>
@@ -161,7 +161,7 @@ export default function Page() {
                     <Input
                       type="password"
                       placeholder="••••••••"
-                      className="h-11 rounded-xl border-white/10 bg-white/[0.02] text-white placeholder:text-zinc-600 focus:border-[#FE7B34]/50 focus:ring-1 focus:ring-[#FE7B34]/50 pl-4 pr-10"
+                      className="h-11 rounded-xl border-white/10 bg-white/2 text-white placeholder:text-zinc-600 focus:border-[#FE7B34]/50 focus:ring-1 focus:ring-[#FE7B34]/50 pl-4 pr-10"
                     />
                     <button type="button" className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300">
                       <EyeOff className="size-4" />
@@ -175,7 +175,7 @@ export default function Page() {
                 <label className="flex items-center gap-2 cursor-pointer select-none">
                   <input 
                     type="checkbox" 
-                    className="accent-[#FE7B34] size-4 rounded border-white/10 bg-white/[0.02] transition" 
+                    className="accent-[#FE7B34] size-4 rounded border-white/10 bg-white/2 transition" 
                   />
                   <span className="text-xs text-zinc-400">Remember session</span>
                 </label>
@@ -184,7 +184,7 @@ export default function Page() {
               {/* Login CTA Button with Warm Contrast Gradient */}
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#FE7B34] to-[#A9420A] px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#FE7B34] to-[#A9420A] px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 active:scale-[0.99]"
               >
                 Enter {role.charAt(0).toUpperCase() + role.slice(1)} Portal <ArrowRight className="size-4" />
               </button>
@@ -200,11 +200,11 @@ export default function Page() {
 
             {/* Social OAuth Integration */}
             <div className="grid grid-cols-2 gap-3">
-              <button className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2.5 text-xs font-medium text-white transition hover:bg-white/[0.05]">
+              <button className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/2 px-4 py-2.5 text-xs font-medium text-white transition hover:bg-white/5">
                 <Mail className="size-4 text-zinc-400" />
                 Google
               </button>
-              <button className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2.5 text-xs font-medium text-white transition hover:bg-white/[0.05]">
+              <button className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/2 px-4 py-2.5 text-xs font-medium text-white transition hover:bg-white/5">
                 <Building2 className="size-4 text-zinc-400" />
                 SSO Identity
               </button>

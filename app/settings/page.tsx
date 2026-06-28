@@ -16,9 +16,12 @@ export default function Page() {
             ["Theme settings", "Dark premium", "OS-style surfaces and amber accents."],
             ["Connected platforms", "5 active", "LeetCode, GitHub, LinkedIn, Gmail, Notion."],
           ].map(([title, status, desc]) => (
-            <div key={title as string} className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <div
+              key={title as string}
+              className="animated-card rounded-3xl border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/20 transition-all duration-500 hover:-translate-y-1 hover:border-white/20"
+            >
               <SectionHeader title={title as string} />
-              <p className="text-sm text-zinc-500">{desc as string}</p>
+              <p className="text-sm text-zinc-300">{desc as string}</p>
               <div className="mt-4 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
                 {status as string}
               </div>

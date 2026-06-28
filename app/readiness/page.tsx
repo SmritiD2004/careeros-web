@@ -56,7 +56,7 @@ export default function Page() {
                 {[48, 54, 61, 66, 70, 76, 82].map((value, index) => (
                   <div key={index} className="flex-1">
                     <div
-                      className="rounded-t-2xl bg-gradient-to-t from-amber-500 to-orange-300"
+                      className="rounded-t-2xl bg-linear-to-t from-amber-500 to-orange-300"
                       style={{ height: `${value}%` }}
                     />
                   </div>
